@@ -1,0 +1,424 @@
+{
+	"info": {
+		"_postman_id": "572c252f-bd43-491f-9e89-c8469ea04b8f",
+		"name": "My Badminton Club",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Player Controller",
+			"item": [
+				{
+					"name": "CreatePlayer 1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"phoneNumber\": 101,\r\n    \"name\": \"Makesh\",\r\n    \"password\": \"nav@123\",\r\n    \"accountBalance\": 200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin/createplayer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"createplayer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreatePlayer 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"phoneNumber\": 102,\r\n    \"name\": \"Likitha\",\r\n    \"password\": \"nav@123\",\r\n    \"accountBalance\": 200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin/createplayer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"createplayer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreatePlayer 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"phoneNumber\": 103,\r\n    \"name\": \"Navya\",\r\n    \"password\": \"nav@123\",\r\n    \"accountBalance\": 200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin/createplayer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"createplayer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreatePlayer 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"phoneNumber\": 104,\r\n    \"name\": \"Arvinth\",\r\n    \"password\": \"nav@123\",\r\n    \"accountBalance\": 200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin/createplayer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"createplayer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlayer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin/getplayer/103",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"getplayer",
+								"103"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "101",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllPlayers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin/details",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"details"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Match Controller",
+			"item": [
+				{
+					"name": "Start Match 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"courtNo\": 1,\r\n    \"player1PhoneNo\": 101,\r\n    \"player2PhoneNo\": 102, \r\n    \"amount\": 200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin/match/start",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"match",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Start Match 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"courtNo\": 2,\r\n    \"player1PhoneNo\": 103,\r\n    \"player2PhoneNo\": 104, \r\n    \"amount\": 200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin/match/start",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"match",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "End Match",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin/match/end?court=1&phoneNo=102",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"match",
+								"end"
+							],
+							"query": [
+								{
+									"key": "court",
+									"value": "1"
+								},
+								{
+									"key": "phoneNo",
+									"value": "102",
+									"description": "Enter Losers Phone Number"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Match Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin/matchdetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"matchdetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Match Details by time",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin/matchdetails?id=1&start=2023-05-22T20:24:21.642302&end=2023-05-22T20:27:11.329484",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"matchdetails"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "start",
+									"value": "2023-05-22T20:24:21.642302"
+								},
+								{
+									"key": "end",
+									"value": "2023-05-22T20:27:11.329484"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment Controller",
+			"item": [
+				{
+					"name": "Get All Payment Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin/paymentdetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"paymentdetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Payment Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin/payment?id=102&amount=100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"payment"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "102"
+								},
+								{
+									"key": "amount",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Payment details by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin/paymentdetails/101",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"paymentdetails",
+								"101"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Welcome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		}
+	]
+}
